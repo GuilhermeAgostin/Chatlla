@@ -1,0 +1,47 @@
+.privacy-policy-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: -webkit-fill-available;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: auto;
+  min-height: 90vh;
+  position: relative;
+  top: 10vh;
+  border: 1px solid #000000;
+  padding: 0 4vw;
+}
+
+th,
+td {
+  border-bottom: 0.25px solid;
+  font-size: 11px;
+  padding: 2vw 10vw;
+}
+
+table {
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  padding: 2px 4px;
+}
+
+.paragraph-privacy-policy {
+  font-size: 0.8125rem !important;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .privacy-policy-container {
+    padding: 0 6vw;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .privacy-policy-container {
+    top: 16vh;
+    padding: 0 6vw;
+  }
+}

@@ -1,0 +1,303 @@
+.main-splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 100vh;
+  height: auto;
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  position: absolute;
+}
+
+.splash-screen-title {
+  font-family: "Pacifico", cursive;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 200;
+  z-index: 3;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.trapezoid {
+  position: absolute;
+  bottom: -4px;
+  left: 0vw;
+  z-index: 1;
+}
+
+.waves-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  animation: toLeftWaves1 2s ease-out normal forwards;
+}
+
+.waves-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: toRightWaves2 2s ease-out normal forwards;
+}
+
+.cloud-clipart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.waves-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  animation: toLeftWawes3 2s ease-out normal forwards;
+}
+
+.circle-doodle-line {
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  z-index: 2;
+}
+
+.bottom-eye {
+  position: absolute;
+  bottom: 2vh;
+  right: 45%;
+  z-index: 2;
+  animation: scale 1.5s ease-out normal forwards;
+}
+
+.left-abstract-form {
+  position: absolute;
+  bottom: 10vh;
+  z-index: 2;
+  left: 0;
+}
+
+.bottom-shine {
+  position: absolute;
+  bottom: 2vh;
+  z-index: 2;
+  left: 10vw;
+}
+
+.bottom-right-abstract-form {
+  position: absolute;
+  bottom: 8vh;
+  z-index: 1;
+  right: 0;
+}
+
+.top-right-abstract-form {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  bottom: 70%;
+  right: 25vw;
+  z-index: 2;
+  animation: show 1.5s ease-out normal forwards;
+}
+
+.center-eye {
+  position: relative;
+  bottom: 10vh;
+  right: -10vw;
+  animation: scale 1.5s ease-out normal forwards;
+}
+
+.top-eye {
+  position: absolute;
+  top: 5vh;
+  right: 10%;
+  z-index: 2;
+  animation: scale 1.5s ease-out normal forwards;
+}
+
+.top-shine {
+  position: absolute;
+  top: 2vh;
+  z-index: 2;
+  right: 30vw;
+}
+
+.c-trapezoid-2 {
+  position: absolute;
+  top: 0vh;
+  z-index: 1;
+  left: -1vw;
+}
+
+.peace-symbol {
+  position: absolute;
+  bottom: 10vh;
+  right: 20vw;
+  z-index: 1;
+  animation: toTop 1.5s ease-out normal forwards;
+}
+
+.center-shine {
+  position: absolute;
+  top: 12vh;
+  left: 8vw;
+  z-index: 1;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 55%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+}
+
+@keyframes toRightWaves2 {
+  from {
+    transform: scale(1.4);
+    top: 2vh;
+    left: 2vw;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes toLeftWawes3 {
+  from {
+    transform: scale(1.4);
+    bottom: 4vh;
+    right: 2vw;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+    opacity: 0;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+    opacity: 0.25;
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+    opacity: 0.5;
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+    opacity: 0.75;
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes toLeftWaves1 {
+  from {
+    transform: scale(1.4);
+    top: 2vh;
+    right: 2vw;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0.1, 0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes toTop {
+  from {
+    transform: scale(0.5);
+    bottom: 5vh;
+    right: 15vw;
+  }
+
+  to {
+    transform: scale(1);
+    bottom: 10vh;
+    right: 20vw;
+  }
+}
+
+/* Mobile */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .splash-screen-title {
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end forwards;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {
+  .main-splash-screen {
+    overflow-y: hidden;
+  }
+
+  .splash-screen-title {
+    animation: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .splash-screen-title {
+    animation: none;
+  }
+}

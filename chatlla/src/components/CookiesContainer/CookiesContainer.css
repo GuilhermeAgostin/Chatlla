@@ -1,0 +1,79 @@
+.cookies-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: .25vh;
+    left: auto;
+    width: 85%;
+    min-height: 20vh;
+    margin: 2vh;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 6px 5px #cdcdcd;
+    -moz-box-shadow: 0px 0px 6px 5px #cdcdcd;
+    box-shadow: 0px 0px 6px 5px #cdcdcd;
+    z-index: 5;
+    padding: 2vw 4vw;
+}
+
+.cookies-container-title {
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: left;
+    color: #D88DB6;
+    margin-bottom: 0;
+}
+
+.consult-privacy-policy-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.cokkies-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2vw 2vh 2vw;
+}
+
+.button-reject {
+    width: 50%;
+    margin-right: 2vw;
+    height: 4.8vh;
+    border-radius: 12vw;
+    border: none;
+    color: #D88DB6;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-proceed {
+    width: 70vw;
+    height: 4.8vh;
+    border-radius: 12vw;
+    border: none;
+    background-color: #D88DB6;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .cookies-container {
+       
+        left: 0;
+        width: -webkit-fill-available;
+       
+    }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .cookies-container {
+       
+        left: 0;
+        width: -webkit-fill-available;
+       
+    }
+}

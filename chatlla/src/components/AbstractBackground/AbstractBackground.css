@@ -1,0 +1,44 @@
+.main-abstract-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    max-width: 100vw;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.svg-left-bottom-abstract-form-background{
+    height: 50vh;
+    display: block;
+}
+
+.left-top-abstract-form-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-top-abstract-form-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.left-bottom-abstract-form-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.right-bottom-abstract-form-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

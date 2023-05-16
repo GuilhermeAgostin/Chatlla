@@ -1,0 +1,370 @@
+:root {
+    --widthAnimeImageDesktop: 10vw;
+    --heightAnimeImageDesktop: var(--widthAnimeImageDesktop);
+    --borderRadiusAnimeImageDesktop: calc(var(--widthAnimeImageDesktop) / 2);
+
+    --widthAnimeImageMobile: 40vw;
+    --heightAnimeImageMobile: var(--widthAnimeImageMobile);
+    --borderRadiusAnimeImageMobile: calc(var(--widthAnimeImageMobile) / 2);
+}
+
+.AddThoughtForm input[type='text'] {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+.thoughts {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    font-family: "Lexend Exa";
+    background-color: #d9d9d9;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thoughts-m-container {
+    background-color: purple;
+    bottom: 12vh;
+    width: 100%;
+}
+
+.Thought {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+    color: #000000;
+    max-width: 86vw;
+    min-width: 86vw;
+    border-radius: 6vw;
+}
+
+.Thought .remove-button {
+    font-size: 80%;
+    float: right;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.Thought .remove-button:hover {
+    color: #000000;
+    background-color: #000;
+}
+
+.normal-background {
+    background-color: #701EA2;
+}
+
+
+.channel {
+    width: 100%;
+    min-height: 80vh;
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+#ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 96%;
+    margin: 2vw;
+    overflow: hidden auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    height: 95%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.btn {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 2vw;
+}
+
+.message-item-container {
+    margin-bottom: 5vh;
+    display: contents;
+    flex-direction: column;
+    width: inherit;
+    min-height: 6vh;
+}
+
+.message-item {
+    display: inline-table;
+    width: fit-content;
+    min-width: 5vw;
+    max-width: 70%;
+    min-height: 4vh;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 1vw 1vw 1vw;
+    position: relative;
+}
+
+.message {
+    height: auto;
+    font-size: 13px;
+    display: block;
+    color: rgb(0, 0, 0);
+    white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.message-date-time {
+    color: rgb(112, 112, 112);
+    font-size: 10px;
+    position: relative;
+    top: 1vw;
+    padding-bottom: 1vh;
+}
+
+.send-photo-button {
+    cursor: pointer;
+    background-color: rgb(146, 205, 200);
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+    max-width: 34px;
+    max-height: 34px;
+    background-image: url(/src/assets/photo-camera.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline: none;
+    position: absolute;
+}
+
+.beta{
+    position: absolute;
+    z-index: 1;
+    margin-top: -2vw;
+    font-size: 0.5em;
+    background-color: #fff;
+    border-radius: 1vw;
+    text-align: center;
+    padding: 2px 4px;
+    border: 1px solid #d9d9d9;
+    margin-left: 2vw;
+}
+
+.send-message-button {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(146, 205, 200);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+    max-width: 34px;
+    max-height: 34px;
+    outline: none;
+    border: none;
+    position: absolute;
+}
+
+
+.image-message {
+    max-height: 20vw;
+    height: 20vw;
+    max-width: 100%;
+    float: inline-end;
+}
+
+.channel-go-back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .channel-image-go-back-button {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .thoughts {
+        display: flex;
+        flex-direction: column;
+        width: 96vw;
+        position: relative;
+        top: 8vh;
+        height: 90vh;
+        overflow-y: auto;
+        padding: 2vw 2vw 0 2vw;
+    }
+
+    .channel {
+        width: 100vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .channel-go-back-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 5vw;
+        background-color: #f1f1f1;
+margin-left: 2vw;
+        border: none;
+        cursor: pointer;
+      }
+    
+      .channel-image-go-back-button {
+        width: 7vw;
+        height: 7vw;
+        position: relative;
+      }
+
+    .message-date-time {
+        color: rgb(112, 112, 112);
+        font-size: 2vw;
+        position: relative;
+        top: 1vw;
+        padding: 2px;
+        padding-bottom: 1vh;
+    }
+
+    #ul {
+        margin-top: 1vw;
+        height: 78%;
+        margin-bottom: 0;
+        position: relative;
+        top: 10vh;
+    }
+
+    .send-photo-button {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 4.5vw;
+    }
+
+    .functional-button-container {
+        width: 12%;
+    }
+
+    .send-message-button {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 4.5vw;
+        padding-left: 8px;
+    }
+
+    .message-item-container {
+        margin-bottom: 0vh;
+    }
+
+    .image-message {
+        max-height: 50vw;
+        height: 50vw;
+        max-width: 32vw;
+        width: 32vw;
+        float: inline-end;
+    }
+
+    .message {
+        padding: 5px 5px 0px 5px;
+    }
+
+    .message-item{
+        display: block;
+    }
+
+    
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .channel {
+        width: 100vw;
+    }
+
+    .channel-go-back-button {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5vw;
+    background-color: #f1f1f1;
+    margin-left: 2vw;
+    border: none;
+    cursor: pointer;
+      }
+
+    .message-date-time {
+        color: rgb(112, 112, 112);
+        font-size: 2vw;
+        position: relative;
+        top: 1vw;
+        padding: 2px;
+        padding-bottom: 1vh;
+    }
+
+    #ul li:nth-child(1) {
+        margin-top: 2vh;
+    }
+
+    #ul {
+        margin-top: 2vw;
+        height: 86%;
+        margin-bottom: 8vw;
+    }
+
+    .send-photo-button {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 4.5vw;
+    }
+
+    .send-message-button {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 4.5vw;
+        padding-left: 8px;
+    }
+
+    .message-item-container {
+        display: contents;
+        margin: 0;
+    }
+
+    .image-message {
+        max-height: 20vw;
+        height: 20vw;
+        max-width: 100%;
+        float: inline-end;
+    }
+
+    .message {
+        padding: 5px 5px 0px 5px;
+    }
+
+}

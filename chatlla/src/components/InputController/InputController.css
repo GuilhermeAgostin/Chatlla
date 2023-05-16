@@ -1,0 +1,410 @@
+.AddThoughtForm {
+  display: flex;
+  width: -webkit-fill-available;
+  transition: all 400ms;
+  position: relative;
+}
+
+.AddThoughtForm input {
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+
+textarea {
+  font-size: 16px;
+}
+
+.mensage-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #92b1d8;
+  width: -webkit-fill-available;
+  height: 12vh;
+  align-items: center;
+}
+
+.textarea-container {
+  display: flex;
+  width: 78%;
+  transition: all 400ms;
+}
+
+.input-message {
+  background-color: rgb(252, 252, 252);
+  color: rgb(0, 0, 0);
+  max-height: 50vh;
+  width: 500px;
+  min-width: 36vw;
+  transition: all 500ms;
+  resize: none;
+  font-family: "Lexend Exa";
+  margin: 0vw 1.2vw 0vw 1vw;
+  border: none;
+  outline: none;
+  height: 8vh;
+  font-size: 13px;
+  transition: all 400ms;
+  border-radius: 4px;
+}
+
+.functional-button-container {
+  display: flex;
+  width: 15%;
+  height: 12vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send-photo-button {
+  cursor: pointer;
+  background-color: #d88db6;
+  display: block;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 1.5vw;
+  max-width: 34px;
+  max-height: 34px;
+  background-image: url(/src/assets/photo-camera.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none;
+  position: absolute;
+}
+
+.send-message-button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #d88db6;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 1.5vw;
+  max-width: 34px;
+  max-height: 34px;
+  outline: none;
+  border: none;
+  position: absolute;
+}
+
+.beta {
+  position: absolute;
+  z-index: 1;
+  margin-top: -2vw;
+  font-size: 0.5em;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1vw;
+  text-align: center;
+  padding: 2px 4px;
+  border: 1px solid #d9d9d9;
+  margin-left: 2vw;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.send-message-button input {
+  font-family: "Lexend Exa";
+  outline: none;
+  border: none;
+  background-image: url("../../assets/send.svg");
+  background-repeat: no-repeat;
+  background-position: 60% center;
+  width: auto;
+  background-color: transparent;
+  box-shadow: none;
+  background-size: 24px;
+  cursor: pointer;
+}
+
+.container-photo-send {
+  display: flex;
+  align-items: center;
+  min-width: 2vw;
+}
+
+.container-message-send {
+  z-index: 2;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .input-message {
+    max-width: 80vw;
+    width: 70vw;
+    margin: 0 3vw 0 2vw;
+    border: none;
+    outline: none;
+    height: 8vh;
+    transition: all 400ms;
+    font-size: 16px;
+    resize: none;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .input-message:focus {
+    max-width: 80vw;
+    width: 70vw;
+  }
+
+  .AddThoughtForm {
+    flex-direction: column;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  .mensage-container {
+    justify-content: flex-start;
+    align-items: center;
+    height: 12vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: #92b1d8;
+  }
+
+  .send-photo-button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+  }
+
+  .functional-button-container {
+    width: 32%;
+  }
+
+  .textarea-container {
+    width: 78%;
+  }
+
+  .send-message-button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+    z-index: 1;
+    position: relative;
+  }
+
+  .mic {
+    width: 24px;
+    height: 24px;
+    margin: 0 -2vw;
+  }
+
+  .container-photo-send {
+    align-items: center;
+    min-width: 8vw;
+  }
+
+  .container-message-send {
+    display: flex;
+    align-items: center;
+    min-width: 8vw;
+    z-index: 1;
+  }
+
+  .beta {
+    margin-top: -8vw;
+    margin-left: 8vw;
+  }
+
+  .send-message-button input {
+    background-position: -0.6vw;
+    background-size: 24px;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+  .AddThoughtForm {
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    position: absolute;
+  }
+
+  .thoughts {
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    position: relative;
+    top: 8vh;
+    height: 90vh;
+    overflow-y: auto;
+    padding: 2vw 2vw 0 2vw;
+  }
+
+  .channel {
+    width: 100vw;
+  }
+
+  .message-date-time {
+    color: rgb(112, 112, 112);
+    font-size: 2vw;
+    position: relative;
+    top: 1vw;
+    padding: 2px;
+    padding-bottom: 1vh;
+  }
+
+  .container-photo-send{
+    min-width: 5vw;
+  }
+
+  .send-photo-button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+  }
+
+  .functional-button-container {
+    width: 12%;
+  }
+
+  .textarea-container {
+    width: 78%;
+  }
+
+  .send-message-button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+    padding-left: 8px;
+  }
+
+  .send-message-button input {
+    background-position: -0.6vw;
+    background-size: 24px;
+}
+
+  .input-message {
+    max-width: 80vw;
+    width: 70vw;
+    margin: 0 2vw 0 2vw;
+    border: none;
+    outline: none;
+    height: 8vh;
+    transition: all 500ms;
+    font-size: 16px;
+    resize: none;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .message-item-container {
+    display: contents;
+    margin: 0;
+  }
+
+  .image-message {
+    max-height: 20vw;
+    height: 20vw;
+    max-width: 100%;
+    float: inline-end;
+  }
+
+  .message {
+    padding: 5px 5px 0px 5px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .input-message {
+    max-width: 80vw;
+    width: 70vw;
+    margin: 0 3vw 0 2vw;
+    border: none;
+    outline: none;
+    height: 8vh;
+    transition: all 400ms;
+    font-size: 16px;
+    resize: none;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .input-message:focus {
+    max-width: 80vw;
+    width: 70vw;
+  }
+
+  .AddThoughtForm {
+    flex-direction: column;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  .mensage-container {
+    justify-content: flex-start;
+    align-items: center;
+    height: 12vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: #92b1d8;
+  }
+
+  .send-photo-button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+  }
+
+  .functional-button-container {
+    width: 32%;
+  }
+
+  .textarea-container {
+    width: 78%;
+  }
+
+  .send-message-button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+    z-index: 1;
+    position: relative;
+  }
+
+  .mic {
+    width: 24px;
+    height: 24px;
+    margin: 0 -2vw;
+  }
+
+  .container-photo-send {
+    align-items: center;
+    min-width: 8vw;
+  }
+
+  .container-message-send {
+    display: flex;
+    align-items: center;
+    min-width: 8vw;
+    z-index: 1;
+  }
+
+  .beta {
+    margin-top: -4vw;
+    margin-left: 4vw;
+  }
+
+  .send-message-button input {
+    background-position: -0.6vw;
+    background-size: 24px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+.input-message{
+  width: 405px;
+}
+}
+

@@ -1,0 +1,198 @@
+.wave-button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  height: 2.5vw;
+  width: 2.5vw;
+  position: relative;
+}
+
+.wave,
+.wave::before,
+.wave::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  height: 80%;
+  margin-left: 0vw;
+  transform-origin: 50% 50%;
+  background-color: transparent;
+  border-radius: 38% 42%;
+  box-shadow: inset 0 0 10vw rgba(255, 0, 255, 0.8);
+  animation: spin 16s infinite linear;
+}
+
+.wave::before {
+  width: 100%;
+  height: 95%;
+  margin-top: 0vw;
+  transform-origin: 49% 50%;
+  border-radius: 68% 45%;
+  box-shadow: inset 0 0 10vw rgba(255, 255, 0, 0.8);
+  animation: spin 17s infinite linear;
+}
+
+.wave::after {
+  width: 100%;
+  height: 98%;
+  margin-top: 0vw;
+  transform-origin: 51% 49%;
+  border-radius: 48% 42%;
+  box-shadow: inset 0 0 10vw rgba(0, 255, 255, 0.8);
+  animation: spin 12s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wave-2,
+.wave-2::before,
+.wave-2::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  height: 80%;
+  margin-left: 0vw;
+  transform-origin: 50% 50%;
+  background-color: transparent;
+  border-radius: 38% 42%;
+  box-shadow: inset 0 0 10vw rgba(255, 0, 255, 0.8);
+  animation: spin 14s infinite linear;
+}
+
+.wave-2::before {
+  width: 100%;
+  height: 95%;
+  margin-top: 0vw;
+  transform-origin: 49% 51%;
+  border-radius: 80% 38%;
+  box-shadow: inset 0 0 10vw rgba(136, 255, 0, 0.8);
+  animation: spin 10s infinite linear;
+}
+
+.wave-2::after {
+  width: 100%;
+  height: 98%;
+  margin-top: 0vw;
+  transform-origin: 50% 44%;
+  border-radius: 48% 42%;
+  box-shadow: inset 0 0 10vw rgba(0, 195, 255, 0.8);
+  animation: spin 14s infinite linear;
+}
+
+.mic {
+  position: relative;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.message-ballon {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  width: 9vw;
+  background: #f49e4d;
+  border-radius: 40px;
+  padding: 24px 18px;
+  text-align: center;
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, all 0.5s;
+  margin-bottom: 400px;
+  margin-left: 6vw;
+  min-height: 20vh;
+  font-size: 12px;
+  text-align: initial;
+  font-family: "Lexend Exa";
+  z-index: 2;
+}
+
+.message-ballon.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.message-ballon-bottom-left::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #f49e4d;
+  border-right: 12px solid transparent;
+  border-top: 20px solid #f49e4d;
+  border-bottom: 20px solid transparent;
+  left: 42px;
+  bottom: -15px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .wave-button {
+    height: 9vw;
+    width: 9vw;
+  }
+
+  .message-ballon {
+    width: 36vw;
+    margin-bottom: 57vh;
+    color: #000;
+  }
+
+  .message-ballon-bottom-left::before {
+    left: 72px;
+  }
+}
+
+/* Mobile Landscape*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .wave-button {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+
+  .message-ballon {
+    width: 36vw;
+    margin-bottom: 64vh;
+    color: #000;
+  }
+
+  .message-ballon-bottom-left::before {
+    left: 120px;
+  }
+
+  .mic {
+   
+    margin: 0 -2vw;
+}
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .wave-button {
+    height: 4vw;
+    width: 4vw;
+  }
+
+  .message-ballon {
+    width: 36vw;
+    margin-bottom: 57vh;
+    color: #000;
+  }
+
+  .message-ballon-bottom-left::before {
+    left: 72px;
+  }
+}

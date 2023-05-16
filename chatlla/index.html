@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/chatlla-logo.svg" sizes="128x128">
+  <meta property="og:title" content="Chatlla - Experience a new way to network people for free &#127811;">
+  <meta name="description" content="Chatlla is a platform to connect like-minded people. Join us and make new friends!">
+  <meta property="og:url" content="https://chatlla.learnadvancedreact.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chatlla">
+  <meta property="og:image" content="https://chatlla.learnadvancedreact.com.br/assets/chatlla-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatlla</title>
+  <style>
+    body {
+      width: 100%;
+      margin: 0;
+      max-width: inherit;
+      height: auto;
+      background-color: #ffffff;
+      overflow-x: hidden;
+      overflow-y: auto;
+      font-family: "Lexend Exa";
+    }
+
+    #root {
+      margin: unset !important;
+      padding: 0 !important;
+    }
+
+    button {
+      font-family: "Lexend Exa";
+      font-size: 13px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    button:hover {
+      opacity: .85;
+    }
+
+    button:active {
+      opacity: .85;
+      transform: scale(.95);
+    }
+
+    button:focus-visible {
+      outline: none;
+    }
+
+    input {
+      font-family: "Lexend Exa";
+      font-size: 13px;
+    }
+
+    label {
+      font-family: "Lexend Exa";
+      font-size: 13px;
+    }
+
+    p {
+      font-size: 13px;
+      text-align: left;
+    }
+
+    strong {
+      font-size: 13px;
+    }
+
+    li {
+      font-size: 13px;
+    }
+
+    /* Mobile  */
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      input {
+        font-size: 16px;
+      }
+
+      button:hover {
+        opacity: 1;
+      }
+    }
+
+    /* Mobile Landscape */
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+
+      p {
+        font-size: .8125rem;
+      }
+
+      li {
+        font-size: 11px;
+      }
+
+      input {
+        font-size: 16px;
+      }
+
+      button:hover {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

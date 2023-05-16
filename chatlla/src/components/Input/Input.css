@@ -1,0 +1,267 @@
+.custom-input {
+    min-height: 3vh;
+    color: black;
+    border: none;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    outline: none;
+    background-color: #ffffff;
+    float: left;
+    padding-left: 1vw;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 32%;
+    margin-top: 0.25px;
+    max-height: 40px;
+    position: absolute;
+    max-width: 720px;
+    z-index: 1;
+}
+
+
+.custom-input::placeholder {
+    font-size: 13px;
+    color: #1b1b1b;
+}
+
+.custom-container-input {
+    display: flex;
+    flex-direction: column;
+    height: 4vw;
+    background-color: rgba(255, 255, 255);
+    -webkit-box-align: center;
+    width: -webkit-fill-available;
+    box-sizing: border-box;
+    width: 90%;
+    min-height: 50px;
+    max-height: 50px;
+    border: 1px solid #1b1b1b;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.custom-container-input-disabled {
+    display: flex;
+    flex-direction: column;
+    height: 4vw;
+    background-color: rgba(255, 255, 255);
+    -webkit-box-align: center;
+    width: -webkit-fill-available;
+    box-sizing: border-box;
+    min-height: 50px;
+    max-height: 50px;
+    border: 1px solid #d9d9d9;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+.custom-label {
+    color: #000000;
+    position: relative;
+    padding: 0 .5vw;
+    background-color: #ffffff;
+    color: #474747;
+    z-index: 2;
+    width: auto;
+    max-width: 150px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: fit-content;
+    text-align: left;
+    left: 2%;
+}
+
+input {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0), inset 0 0 0 100px #ffffff;
+}
+
+input:-webkit-autofill~label {
+    bottom: 12px;
+}
+
+.custom-input:focus~label {
+    background-color: #ffffff;
+    bottom: 50%;
+    font-size: small;
+}
+
+.custom-input:not(:placeholder-shown)~label {
+    background-color: #ffffff;
+    bottom: 50%;
+    font-size: small;
+}
+
+.container-password-icon {
+    display: flex;
+    position: absolute;
+    width: inherit;
+    justify-content: flex-end;
+    max-height: 40px;
+    padding: 0;
+    margin-left: -2vw;
+}
+
+.search-container-password-icon{
+    display: flex;
+    position: absolute;
+    width: 45%;
+    justify-content: flex-end;
+    max-height: 40px;
+    padding: 0;
+    margin-left: -2vw;
+}
+
+.password-icon {
+    display: block;
+    cursor: pointer;
+    max-width: 24px;
+    max-height: 24px;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-input:disabled~.custom-label {
+    color: #d9d9d9;
+    cursor: "not-allowed";
+
+}
+
+.custom-input::placeholder {
+    font-size: 13px;
+    color: #808080;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .custom-input {
+        height: 6vh;
+        min-height: 6vh;
+        width: 66vw;
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        position: absolute;
+        left: 10%;
+    }
+
+    .custom-input:focus~label {
+        background-color: #ffffff;
+        color: #474747;
+        bottom: 8vw;
+        font-size: small;
+    }
+
+    .custom-input:not(:placeholder-shown)~label {
+        background-color: #ffffff;
+        color: #474747;
+        bottom: 8vw;
+        font-size: small;
+    }
+
+    .custom-container-input {
+        flex-direction: row;
+        width: 86vw;
+        padding-left: 5px;
+        height: 9vh;
+        align-items: center;
+        justify-content: flex-start;
+        max-height: 80px;
+    }
+
+    .custom-label {
+        left: -60vw;
+        max-width: 180px;
+    }
+
+    .container-password-icon {
+        margin-right: 4vw;
+        width: 80vw;
+        justify-content: flex-end;
+    }
+
+    .custom-input::placeholder {
+        font-size: 13px;
+        color: #808080;
+    }
+
+    .custom-container-input-disabled {
+        flex-direction: row;
+        width: 86vw;
+        padding-left: 5px;
+        height: 9vh;
+        align-items: center;
+        justify-content: flex-start;
+        max-height: 80px;
+        pointer-events: auto;
+    }
+
+    .custom-input:disabled~.custom-label {
+        color: #d9d9d9;
+    }
+}
+
+/* Mobile Landscape*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .custom-input {
+        height: 6vh;
+        min-height: 6vh;
+        width: 66vw;
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        position: absolute;
+    }
+
+    input:-webkit-autofill,
+    .custom-input:focus~label {
+        background-color: #ffffff;
+        font-size: small;
+    }
+
+    .custom-input:not(:placeholder-shown)~label {
+        background-color: #ffffff;
+        bottom: 4vw;
+        font-size: small;
+    }
+
+    .custom-container-input {
+        padding-left: 5px;
+        min-width: 80vw;
+    }
+
+    .custom-label {
+        left: 3vw;
+        max-width: 180px;
+    }
+
+    .container-password-icon {
+        width: 88vw;
+        justify-content: flex-end;
+    }
+
+    .custom-container-input-disabled {
+        width: 80vw;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    .custom-container-input {
+        width: 80vw;
+    }
+
+    .custom-container-input-disabled {        
+        width: 80vw;
+    }
+
+}

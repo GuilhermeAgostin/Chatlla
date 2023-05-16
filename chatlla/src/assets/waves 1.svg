@@ -1,0 +1,78 @@
+<svg width="320" height="290" viewBox="0 0 320 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 118">
+<g id="one-wave 3" clip-path="url(#clip0_1429_321)">
+<g id="Group">
+<g id="Group_2">
+<g id="container-id1">
+<g id="Clip path group">
+<mask id="mask0_1429_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-22" y="-200" width="490" height="490">
+<g id="presentation_clip_path">
+<path id="Vector" d="M-21.9999 65.9654L243.965 289.137L467.137 23.1714L201.171 -200L-21.9999 65.9654Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1429_321)">
+<g id="id1">
+<g id="Group_3">
+<g id="Group_4">
+<g id="id3">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M320.069 197.923L289.412 189.529C269.953 184.187 253.807 170.638 245.166 152.403C236.562 134.163 220.396 120.599 200.94 115.292C181.481 109.95 165.334 96.4015 156.694 78.1656C148.09 59.9265 131.924 46.3616 112.468 41.0553C93.0086 35.713 76.8621 22.1645 68.2219 3.92858L54.6325 -24.8047L88.553 -65.2295L236.151 28.4006L353.989 157.498L320.069 197.923Z" fill="#F7B4DA"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="waves 1" clip-path="url(#clip1_1429_321)">
+<g id="Group_5">
+<g id="Group_6">
+<g id="container-id1_2">
+<g id="Clip path group_2">
+<mask id="mask1_1429_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="83" y="-201" width="403" height="403">
+<g id="presentation_clip_path_2">
+<path id="Vector_3" d="M82.9999 18.0886L302.089 201.926L485.926 -17.1629L266.837 -201L82.9999 18.0886Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_1429_321)">
+<g id="id1_2">
+<g id="Group_7">
+<g id="Group_8">
+<g id="id3_2">
+<g id="Clip path group_3">
+<mask id="mask2_1429_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="83" y="-201" width="403" height="407">
+<g id="clip_path_1">
+<path id="Vector_4" d="M302.089 201.926L83.0161 18.1021L266.84 -200.97L485.912 -17.1467L302.089 201.926Z" fill="white"/>
+<path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M334.474 205.874L309.172 198.947C293.115 194.567 279.772 183.372 272.655 168.305C265.54 153.268 252.198 142.072 236.154 137.677C220.08 133.284 206.754 122.102 199.636 107.035C192.521 91.998 179.179 80.8025 163.135 76.4069C147.061 72.0139 133.719 60.8183 126.617 45.7651L115.402 22.0506L127.683 7.41454L276.166 52.9113L346.755 191.238L334.474 205.874Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask2_1429_321)">
+<g id="Group_9">
+<path id="Vector_6" fill-rule="evenodd" clip-rule="evenodd" d="M336.937 160.394L311.636 153.467C295.592 149.071 282.249 137.876 275.118 122.825C268.017 107.772 254.675 96.5763 238.617 92.1968C222.557 87.7877 209.23 76.6057 202.099 61.555C194.998 46.5018 181.656 35.3062 165.598 30.9268C149.538 26.5176 136.195 15.3221 129.081 0.285017L117.865 -23.4294L145.86 -56.7933L216.238 -11.3263L334.087 87.5606L364.933 127.03L336.937 160.394Z" fill="#5AD6FF"/>
+<path id="Vector_7" fill-rule="evenodd" clip-rule="evenodd" d="M364.933 127.03L339.631 120.103C323.587 115.707 310.245 104.511 303.114 89.4608C296.012 74.4075 282.67 63.212 266.612 58.8326C250.552 54.4234 237.226 43.2414 230.095 28.1908C222.994 13.1375 209.651 1.94198 193.594 -2.43745C177.533 -6.84662 164.191 -18.0421 157.076 -33.0792L145.86 -56.7937L173.856 -90.1575L295.673 -12.8818L392.929 93.6661L364.933 127.03Z" fill="#E97272"/>
+<path id="Vector_8" fill-rule="evenodd" clip-rule="evenodd" d="M392.929 93.6663L367.627 86.7389C351.569 82.3595 338.227 71.164 331.109 56.0971C323.994 41.06 310.652 29.8645 294.608 25.4689C278.534 21.0759 265.208 9.89393 258.091 -5.17291C250.976 -20.21 237.633 -31.4055 221.589 -35.8011C205.515 -40.1941 192.173 -51.3897 185.072 -66.4429L173.856 -90.1574L186.137 -104.793L334.62 -59.2967L405.21 79.0302L392.929 93.6663Z" fill="#F49E4D"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1429_321">
+<rect width="347.193" height="347.193" fill="white" transform="translate(243.965 289.137) rotate(-140)"/>
+</clipPath>
+<clipPath id="clip1_1429_321">
+<rect width="286" height="286" fill="white" transform="translate(302.089 201.926) rotate(-140)"/>
+</clipPath>
+</defs>
+</svg>

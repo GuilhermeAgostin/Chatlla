@@ -478,7 +478,7 @@ export const Channel = ({
               <>
                 <img
                   src={
-                    userImageProfileChatting === "/src/assets/person.svg"
+                    userImageProfileChatting.includes("person")
                       ? Person
                       : userImageProfileChatting
                   }

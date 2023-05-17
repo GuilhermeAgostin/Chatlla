@@ -267,7 +267,6 @@ export const Channel = ({
     }
 
     if (arr[0].textContent === message || arr === null) {
-     
       target.target.textContent = "See more";
       arr[0].textContent = message.substring(0, 200);
 
@@ -368,7 +367,6 @@ export const Channel = ({
       if (result.remove === true) {
         const chatRef = doc(database, "chats", chatIdNow);
         await deleteDoc(chatRef);
-
       } else {
         const chatRef = doc(database, "chats", chatIdNow);
 
@@ -455,10 +453,7 @@ export const Channel = ({
         setShowMenuChannel(false);
       }}
     >
-      <div
-        style={{ position: windowSize !== "Desktop" ? "fixed" : "relative" }}
-        className="profile-header"
-      >
+      <div className="profile-header">
         {windowSize !== "Desktop" ? (
           <button className="channel-go-back-button">
             <img

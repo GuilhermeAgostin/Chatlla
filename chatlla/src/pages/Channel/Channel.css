@@ -254,10 +254,9 @@ margin-left: 2vw;
 
     #ul {
         margin-top: 1vw;
-        height: 78%;
+        height: 100%;
         margin-bottom: 0;
         position: relative;
-        top: 10vh;
     }
 
     .send-photo-button {

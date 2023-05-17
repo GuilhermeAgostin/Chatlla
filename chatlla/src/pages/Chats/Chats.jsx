@@ -169,7 +169,6 @@ export const Chats = () => {
   };
 
   const handleUsersLogged = async (userToVerify) => {
-
     let user = null;
     let logged = false;
 
@@ -217,14 +216,10 @@ export const Chats = () => {
         handleDeleteDocument(user.userId, "users"),
         getChatsOfUser(),
       ]);
-
-    } catch (error) {
-    }
+    } catch (error) {}
   };
 
   const getChatShouldBeRemoved = async (user) => {
-    alert("getChatShouldBeRemoved");
-
     let chatList = [];
     const q = query(
       collection(database, "chats"),
@@ -269,7 +264,6 @@ export const Chats = () => {
       });
 
       if (chatList.length > 0) {
-        alert("remove chats");
         chatList.forEach(async (chat, index) => {
           await handleDeleteDocument(chat.chatId, "chats");
         });
@@ -280,8 +274,6 @@ export const Chats = () => {
   };
 
   const handleDeleteDocument = async (idToSearch, table) => {
-    alert(table);
-    alert(idToSearch);
     const refToDelete = doc(database, table, idToSearch);
 
     let response = await deleteDoc(refToDelete);
@@ -437,7 +429,6 @@ export const Chats = () => {
       if (sortChats.length === 0 && viewportSize === "Desktop") {
         await handleViewAllUsers();
       } else {
-
         let getRemovedChats = sortChats.filter(
           (chat) =>
             chat.remove === true || chat.removedByUserId !== currentUserId
@@ -532,7 +523,6 @@ export const Chats = () => {
           const user = { ...getCookies, ...userImageProfile };
           setUserActually(user);
           await getChatsOfUser();
-
         }
       } catch (error) {
         alert(error);
@@ -546,14 +536,12 @@ export const Chats = () => {
           setAlreadyCookies(false);
           await getUserInformation();
           await getChatsOfUser();
-
         } else {
           setAlreadyCookies(getCookies);
           const userImageProfile = { imageProfile: imageProfile() };
           const user = { ...getCookies, ...userImageProfile };
           setUserActually(user);
           await getChatsOfUser();
-
         }
       } catch (error) {
         await handleLogout();
@@ -570,12 +558,10 @@ export const Chats = () => {
       i.userName.toUpperCase().includes(search.toUpperCase())
     );
     setListUsersFiltered(arr);
-
   }, 300);
 
   const handleStartConversation = async (chat) => {
     try {
-
       let diffLastUpdated =
         parseInt(
           moment(datetimeLastUpdated)
@@ -599,9 +585,7 @@ export const Chats = () => {
       setChatToGo(chat);
       setRemoveListener(false);
       showModal();
-
-    } catch (error) {
-    }
+    } catch (error) {}
   };
 
   const handleInitiateChat = async (information) => {
@@ -616,7 +600,6 @@ export const Chats = () => {
       } else {
         setMaximumAmountOfChatsError(true);
       }
-
     } else {
       let itemToCompare = currentUser.uid;
       let creatorUserName = !!getCookies.userName
@@ -754,9 +737,7 @@ export const Chats = () => {
         uptime: moment().format(),
         logged: false,
       });
-    } catch (error) {
-      
-    }
+    } catch (error) {}
     removeUserImageProfile();
     cookies.remove("uptime");
     cookies.remove("logged");
@@ -878,7 +859,6 @@ export const Chats = () => {
     const removeChat = async () => {
       if (toRemove) {
         await handleRemoveChatComponent(toRemove);
-        alert("Chat deleted");
         setToRemove(null);
         setChatToGo(null);
         await getChatsOfUser();
@@ -890,8 +870,8 @@ export const Chats = () => {
 
   useEffect(() => {
     const { orientation } = viewportSize || {};
-  
-    if (['portrait', 'landscape'].includes(orientation)) {
+
+    if (["portrait", "landscape"].includes(orientation)) {
       hideModal();
     }
   }, [viewportSize]);
@@ -1006,7 +986,7 @@ export const Chats = () => {
                 </div>
 
                 <h2
-                className="userName"
+                  className="userName"
                   style={{
                     fontSize: "20px",
                   }}
@@ -1369,9 +1349,7 @@ export const Chats = () => {
                 )}
               </div>
             </div>
-            <h3
-             className="userName"
-            >
+            <h3 className="userName">
               {!!getCookies.userId
                 ? getCookies.userName
                 : !!location.state

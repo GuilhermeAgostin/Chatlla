@@ -132,11 +132,9 @@ export const ChatList = ({
 
     if (confirm("You really want delete this chat message?")) {
       setToRemove(chat);
-      alert("Deleted!");
       element.style.transform = "none";
       element2.style.transform = "translateX(80px)";
     } else {
-      alert("Chat already exists");
       element.style.transform = "none";
       element2.style.transform = "translateX(80px)";
     }

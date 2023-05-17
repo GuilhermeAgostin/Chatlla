@@ -213,7 +213,6 @@ export const Channel = ({
         updateChats === false
       ) {
         setUpdateChats(true);
-        alert("update");
         const chatRef = doc(database, "chats", chatIdNow);
 
         await updateDoc(chatRef, {

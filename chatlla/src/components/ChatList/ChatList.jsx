@@ -622,11 +622,7 @@ export const ChatList = ({
                   >
                     <div className="chat-item-profile-image-container">
                       <img
-                        src={
-                          item.imageProfile === "/src/assets/person.svg"
-                            ? Person
-                            : item.imageProfile
-                        }
+                        src={getProfileImage(item)}
                         className="chat-item-profile-image"
                       ></img>
                       <div className="chat-item-body-status ">
@@ -1176,7 +1172,7 @@ export const ChatList = ({
                 >
                   <div className="chat-item-profile-image-container">
                     <img
-                      src={item.imageProfile}
+                      src={getProfileImage(item)}
                       className="chat-item-profile-image"
                     ></img>
                     <div

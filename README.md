@@ -13,9 +13,8 @@
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/GuilhermeAgostin/Chatlla">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/GuilhermeAgostin/Chatlla">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/GuilhermeAgostin/Chatlla">
-  <img alt="Versão" src="https://img.shields.io/badge/versão-1.0.0-blue">
   <img alt="License" src="https://img.shields.io/badge/license-Apache2.0-blue">
-  <img alt="Status do Projeto" src="https://img.shields.io/badge/status-em_desenvolvimento-brightgreen">
+  <img alt="Status do Projeto" src="https://img.shields.io/badge/status-developing-brightgreen">
 </p>
   
 
